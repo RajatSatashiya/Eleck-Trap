@@ -9,6 +9,8 @@ import FAQ from "./Components/FAQ";
 import About from "./Components/About";
 import Gaming from "./Components/Gaming";
 import Laptop from "./Components/Laptop";
+import Error from "./Components/Error";
+import Product from "./Components/Product";
 import Mobile from "./Components/Mobile";
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/gaming" element={<Gaming />} />
         <Route path="/laptop" element={<Laptop />} />
         <Route path="/mobile" element={<Mobile />} />
@@ -25,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </>

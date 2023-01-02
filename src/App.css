@@ -24,3 +24,21 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
+
+.product-image {
+  width: 200px;
+}
+
+.product {
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
